@@ -42,6 +42,7 @@
  
  - Caso desejar testar o front-end fora do ambiente de deploy, sera necessário alterar o endpoint configurado no arquivo environment.ts (ng-avaliacao\src\environments\environment.ts), propriedade **BASE_SERVICE_URL**.
 ---
+
 ### Como acessar?
 ##### Swagger Doc API: 
 [http://localhost:8080/swagger-ui.html#/](http://localhost:8080/swagger-ui.html#/)
@@ -52,4 +53,4 @@ http://localhost/
 
 
 ---
-Por: Paulo Tosani
+*Paulo Tosani -  (22/02/2020)*
