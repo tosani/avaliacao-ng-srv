@@ -1,0 +1,17 @@
+footer {
+  padding: 15px;
+  text-align: center;
+}
+
+footer p {
+  font-family: "Calibri Regular", arial, sans-serif;
+  font-size: 0.8rem;
+  margin: 0 !important;
+}
+
+.watermark {
+  opacity: 0.5;
+  color: white;
+  text-align: center;
+  z-index: -1;
+}

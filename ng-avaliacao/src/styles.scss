@@ -1,0 +1,179 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import "./custom-bootstrap.scss";
+@import "./floating-label-style.scss";
+@import "~ngx-toastr/toastr-bs4-alert";
+
+html {
+  overflow-y: scroll;
+}
+
+body {
+  background-color: #e4e5e6 !important;
+  //background-color: #ffffff !important;
+}
+
+hr {
+  margin-top: 0;
+  margin-bottom: 0;
+  border: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.2) !important;
+}
+
+.container-fluid {
+  width: 100%;
+  padding-right: 0px !important;
+  padding-left: 0px !important;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.wrap {
+  max-width: 1190px;
+  margin: 0 auto;
+  padding: 0 20px 0 20px !important;
+}
+
+.main-content {
+  padding-bottom: 4rem !important;
+}
+
+label {
+  color: $secondary;
+}
+
+th {
+  color: $secondary;
+  font-weight: $font-weight-bold;
+  height: 2rem !important;
+}
+
+th,
+td {
+  vertical-align: middle !important;
+}
+
+td {
+  font-weight: $font-weight-light;
+}
+
+.page-title {
+  color: $primary;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  border-bottom: 1px solid #d0caca;
+}
+
+.page-subtitle {
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+@media (min-width: 768px) {
+  .form-group.row > .col-form-label {
+    text-align: right;
+  }
+}
+
+.card-header {
+  color: $primary;
+}
+
+.huge {
+  font-size: 40px;
+}
+
+.pagination {
+  margin: 0;
+}
+
+.list-group-item {
+  font-weight: $font-weight-light;
+}
+
+/*
+aw-wizard-navigation-bar.horizontal.small ul.steps-indicator li:not(:last-child):before {
+  background-color: #d0caca !important;
+}
+
+aw-wizard-navigation-bar.horizontal.large-empty-symbols ul.steps-indicator li:after {
+  color: #d0caca !important;
+}
+
+aw-wizard-navigation-bar.horizontal.large-empty-symbols ul.steps-indicator li:after {
+  font-size: 1.2rem !important;
+}
+*/
+
+// *****************************
+// AW-WIZARD:
+// *****************************
+.centered-content {
+  margin: auto;
+  text-align: center;
+}
+
+.custom-css aw-wizard-navigation-bar.horizontal ul.steps-indicator li.current div a {
+  color: $secondary;
+}
+
+//.custom-css aw-wizard-navigation-bar.horizontal ul.steps-indicator li.current:after {
+//border-color: violet !important;
+//background-color: violet !important;
+//}
+
+.custom-css aw-wizard-navigation-bar.horizontal ul.steps-indicator li div a {
+  text-transform: none;
+  font-family: $font-family-base;
+  font-weight: $font-weight-normal;
+  //color: $primary;
+}
+
+.custom-css aw-wizard-navigation-bar.horizontal.large-empty-symbols ul.steps-indicator li:after {
+  color: #d0caca;
+  border: 1px solid #d0caca;
+  font-size: 1.2rem !important;
+}
+
+.custom-css aw-wizard-navigation-bar.horizontal.large-empty-symbols ul.steps-indicator li.editing:after {
+  color: red;
+  border: 2px solid red;
+}
+
+.custom-css aw-wizard-navigation-bar.horizontal.large-empty-symbols ul.steps-indicator li.current:after {
+  color: $primary;
+  border: 2px solid $primary;
+}
+
+.custom-css aw-wizard-navigation-bar.horizontal.large-empty-symbols ul.steps-indicator li.done:after {
+  color: $secondary;
+  border: 2px solid $secondary;
+}
+
+.custom-css aw-wizard-navigation-bar.horizontal ul.steps-indicator li:not(:last-child):before {
+  background-color: #d0caca !important;
+}
+
+// Alert
+.toast-container .toast {
+  width: fit-content !important ;
+  font-size: 1.25rem;
+}
+
+.hidden {
+  display: none;
+}
+
+// *****************************
+
+#toast-container{
+  position: absolute;
+  width: 300px;
+}
+.toast-top-center,.toast-bottom-center{
+ left:50%;
+ margin-left: -150px;
+}
+.toast-top-full-width,.toast-bottom-full-width{
+ width: 100%!important;
+}

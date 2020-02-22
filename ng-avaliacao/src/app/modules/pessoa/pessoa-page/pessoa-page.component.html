@@ -1,0 +1,41 @@
+<div class="page-title">
+  <h4>Pessoas</h4>
+</div>
+
+<form #formPesq="ngForm">
+  <div class="row">
+    <div class="col-sm-12 mt-2">
+      <div class="card">
+        <div class="card-header">
+          <i class="fa fa-filter fa-fw"></i> Filtros
+        </div>
+        <div class="card-body ml-2 mr-2">
+          <div class="form-group row">
+            <label for="protocolo" class="col-sm-2 col-form-label">CPF:</label>
+            <div class="col-sm-2">
+              <input id="protocolo" name="filtros.cpf" [(ngModel)]="cpf" type="text" class="form-control" [textMask]="{mask: maskCpf}">
+            </div>
+            <label for="senha" class="col-sm-2 col-form-label">Nome:</label>
+            <div class="col-sm-6">
+              <input id="senha" name="filtros.nome" [(ngModel)]="nome" type="text" class="form-control ">
+            </div>
+          </div>
+        </div>
+        <div class="card-footer text-center">
+          <div class="btn-group">
+            <button class="btn btn-outline-primary" type="button" (click)="pesquisar()">
+              <i class="fa fa-search"></i>
+              Pesquisar
+            </button>
+            <button class="btn btn-outline-primary" type="button" (click)="formPesq.reset();">
+              <i class="fa fa-eraser"></i>
+              Limpar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</form>
+
+<app-pessoa-list></app-pessoa-list>

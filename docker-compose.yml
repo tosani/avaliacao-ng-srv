@@ -1,0 +1,23 @@
+version: "3.7"
+
+services:
+   avaliacao-svc:
+      container_name: avaliacao-svc
+      build: ./avaliacao-svc
+      ports: 
+         - "8080:8080"
+      environment: 
+         server.port: 8080
+         user.locale: user.language=pt-BR
+         TZ: GMT-3       
+   
+   ng-avaliacao:
+      container_name: ng-avaliacao
+      build: ./ng-avaliacao
+      ports: 
+         - "80:80"
+      depends_on:
+         - avaliacao-svc
+
+# docker-compose -f docker-compose.yml -p avaliacao build            
+# docker-compose -f docker-compose.yml -p avaliacao up -d

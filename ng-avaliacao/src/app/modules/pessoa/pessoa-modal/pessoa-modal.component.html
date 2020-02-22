@@ -1,0 +1,66 @@
+<form (ngSubmit)="ngForm.form.valid && salvar()" novalidate autocomplete="off" #ngForm="ngForm">
+  <div class="modal-header">
+    <h4 *ngIf="titulo" class="modal-title" id="modal-title">{{titulo}}</h4>
+    <button type="button" class="close" aria-label="Close button" aria-describedby="modal-title"
+      (click)="activeModal.dismiss()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <div class="row" *ngIf="pessoa.id">
+      <div class="col form-group">
+        <label class="has-float-label">
+          <input [(ngModel)]="pessoa.id" name="pessoa.id" class="form-control" type="text" placeholder=" " value=" "
+            [disabled]="true" />
+          <span>ID</span>
+        </label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col form-group">
+        <label class="has-float-label">
+          <input [(ngModel)]="pessoa.nome" name="pessoa.nome" class="form-control" type="text" placeholder=" " value=" "
+            required #nomeNM="ngModel" ngbAutofocus [ngClass]="{' is-invalid': isInvalid(nomeNM)}" />
+          <span>Nome</span>
+          <div class="invalid-feedback">
+            O nome é obrigatório
+          </div>
+        </label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col form-group">
+        <label class="has-float-label">
+          <input [(ngModel)]="pessoa.cpf" name="pessoa.cpf" class="form-control" [textMask]="{mask: maskCpf}"
+            placeholder=" " type="text" required #cpfNM="ngModel" [ngClass]="{' is-invalid': isInvalid(cpfNM)}" />
+          <span>CPF</span>
+          <div class="invalid-feedback">
+            O CPF é obrigatório
+          </div>
+        </label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col form-group">
+        <label class="has-float-label">
+          <input [(ngModel)]="pessoa.dataNascimento" name="pessoa.dataNascimento" class="form-control" type="text"
+            placeholder=" " minlength="10" [textMask]="{mask: maskData}" #dataNM="ngModel" [ngClass]="{' is-invalid': isInvalid(dataNM)}"/>
+          <span>Data Nascimento</span>
+          <div class="invalid-feedback">
+            Data inválida
+          </div>
+        </label>
+      </div>
+    </div>
+
+  </div>
+  <div class="modal-footer">
+    <div class="btn-group">
+      <button type="submit" class="btn btn-outline-success" [disabled]="!ngForm.form.valid">
+        <i class="fa fa-save"></i>
+        Salvar
+      </button>
+      <button type="button" class="btn btn-outline-danger" (click)="activeModal.dismiss();">Cancelar</button>
+    </div>
+  </div>
+</form>

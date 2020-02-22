@@ -1,0 +1,124 @@
+.logo-brand {
+  height: 3.75rem;
+  margin-right: 1.875rem;
+}
+
+$header-backcolor: #f8f9fa;
+$link-menu-color: #034775;
+$link-menu-color-nao-disp: #a0a7a7;
+
+header {
+  background-color: $header-backcolor !important;
+}
+
+header nav {
+  display: flex;
+  padding: 0px;
+}
+
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:hover {
+  background-color: darken($header-backcolor, 2%) !important;
+  border-radius: 2px;
+}
+
+header .nav-link {
+  color: $link-menu-color;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  font-family: "Calibri Regular";
+}
+
+header a:hover,
+header .active {
+  color: #264c8f;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+header .dropdown-item {
+  color: $link-menu-color;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  font-family: "Calibri Regular";
+}
+
+header .dropdown-item:hover {
+  color: #264c8f !important;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.mobile-menu {
+  background-color: rgba(80, 7, 120, 0.95);
+  width: 100%;
+  padding: 0;
+  z-index: 9;
+}
+
+.mobile-menu a {
+  color: white !important;
+  padding: 0px;
+}
+
+header span.line {
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-color: $link-menu-color;
+}
+
+.line-sm {
+  height: 1px !important;
+}
+
+header .secondary {
+  background-color: #500778;
+  position: relative;
+  z-index: 1;
+  height: 40px;
+  padding: 10px 0 10px 0;
+}
+
+header .secondary nav {
+  justify-content: flex-start;
+}
+
+header .secondary img {
+  height: 20px;
+}
+
+header .secondary a {
+  color: white !important;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  font-family: "Calibri Regular";
+}
+
+header .secondary a span {
+  margin-left: 12px;
+}
+
+header .secondary a:not(:last-child) {
+  margin-right: 24px;
+}
+
+.navbar-login {
+  width: 305px;
+  padding: 10px;
+  padding-bottom: 0px;
+}
+
+.navbar-login-session {
+  padding: 10px;
+  padding-bottom: 0px;
+  padding-top: 0px;
+}
+
+.icon-size {
+  font-size: 65px;
+}
+
+.nao-disponivel {
+  color: $link-menu-color-nao-disp !important;
+}

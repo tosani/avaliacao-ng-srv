@@ -1,0 +1,82 @@
+$primary: #00101C;
+$secondary: #034775;
+
+$white: #fff !default;
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #6c757d !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+$black: #000 !default;
+
+$theme-colors: (
+  "primary": $primary,
+  "secondary": $secondary
+);
+
+//$font-family-sans-serif:      -apple-system, BlinkMacSystemFont, "Calibri Regular", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+
+$form-group-margin-bottom: 0.3rem !default;
+/*
+$font-size-base: 0.8rem !default; // Assumes the browser default, typically `16px`
+$font-weight-normal: 450 !default;
+$font-weight-light: 380 !default;
+*/
+
+$font-size-base:              0.8rem !default; // Assumes the browser default, typically `16px`
+$font-size-lg:                ($font-size-base * 1.25) !default;
+$font-size-sm:                ($font-size-base * .875) !default;
+
+$font-weight-light:           400 !default;
+$font-weight-normal:          500 !default;
+$font-weight-bold:            600 !default;
+
+$line-height-base: 1.2 !default;
+
+$input-btn-padding-y: 0.3rem !default;
+$input-btn-padding-x: 0.5rem !default;
+$input-border-color: $gray-500 !default;
+
+$input-btn-padding-y-sm: 0.1rem !default;
+$input-btn-padding-x-sm: 0.25rem !default;
+//$input-btn-line-height-sm:    $line-height-sm !default;
+
+//$input-placeholder-color: #adb5bd;
+$table-cell-padding: 0.75rem !default;
+$table-cell-padding-sm: 0.3rem !default;
+
+$border-radius: 0.25rem !default;
+$border-radius-lg: 0.3rem !default;
+$border-radius-sm: 0.2rem !default;
+
+$nav-tabs-link-active-color: $primary !important;
+$nav-link-disabled-color: $gray-600 !important;
+
+$pagination-color: $secondary;
+
+$component-active-bg: $secondary;
+$grid-gutter-width: 10px;
+
+$badge-font-weight: normal;
+
+$card-spacer-y: 0.5rem !default;
+$card-spacer-x: 0.5rem !default;
+
+$zindex-dropdown: 1031 !default;
+
+$modal-header-padding: 0.7rem !default;
+$modal-inner-padding: 0.7rem !default;
+
+$label-margin-bottom: 0.25rem !default;
+
+$form-feedback-margin-top: 0.1rem;
+
+// Custom.scss
+// Option A: Include all of Bootstrap
+@import "node_modules/bootstrap/scss/bootstrap";
+
+
