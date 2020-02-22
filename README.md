@@ -24,7 +24,7 @@
 
  1. Instale o [docker](https://www.docker.com/products) caso não tenha no ambiente
  2. Clone o repositório no local desejado. 
- 3. Execute o exec.bat
+ 3. Execute o docker-compose-deploy.bat
 
 #### Opção 3 - MVN e NPM:
 
